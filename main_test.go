@@ -28,22 +28,10 @@ func TestGetFizzBuzz(t *testing.T) {
 		p int
 		want string
 	}{
-		{"test case 1",1,"1"},
-		{"test case 2",2,"2"},
-		{"test case 3",3,"Fizz"},
-		{"test case 4",4,"4"},
-		{"test case 5",5,"Buzz"},
-		{"test case 6",6,"Fizz"},
-		{"test case 7",7,"7"},
-		{"test case 8",8,"8"},
-		{"test case 9",9,"Fizz"},
-		{"test case 10",10,"Buzz"},
-		{"test case 11",11,"11"},
-		{"test case 12",12,"Fizz"},
-		{"test case 13",13,"13"},
-		{"test case 14",14,"14"},
-		{"test case 15",15,"FizzBuzz"},
-		{"test case 16",16,"16"},
+		{"Number",1,"1"},
+		{"Fizz",3,"Fizz"},
+		{"Buzz",5,"Buzz"},
+		{"FizzBuzz",15,"FizzBuzz"},
 	}
 
 	for _, tt := range tests {
@@ -55,13 +43,5 @@ func TestGetFizzBuzz(t *testing.T) {
 			}
 		})
 	}
-
-/*
-	for _, tt := range tests {
-		if got := getFizzBuzz(tt.p); got != tt.want{
-			t.Errorf("Want = %v, got = %v", tt.want, got)
-		}
-	}
-*/
 
 }
