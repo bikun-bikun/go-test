@@ -27,7 +27,7 @@ func getFizzBuzz(p int) (r string){
 		r = strconv.Itoa(p)
 	}
 
-	time.Sleep(100 * time.Millisecond)
+	time.Sleep(500 * time.Millisecond)
 
 	return
 }
